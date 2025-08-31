@@ -2,6 +2,7 @@
 
 **SBC-friendly Argon2id/PBKDF2/xxh128 hash benchmarking and CLI tool**  
 Compliant with **NIST SP 800-63 recommendations**.
+https://pages.nist.gov/800-63-3/sp800-63-3.html
 
 It provides:
 
