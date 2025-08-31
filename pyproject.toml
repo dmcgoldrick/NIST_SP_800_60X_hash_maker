@@ -9,7 +9,7 @@ description = "SBC-friendly Argon2id/PBKDF2/xxh128 hash benchmarking and CLI too
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-  {name = "Daniel McGoldrick", email = "mcgoldphd@gmail.com"}
+  {name = "Anonymous", email = ""}
 ]
 license = {text = "BSD-0-Clause"}
 dependencies = [
