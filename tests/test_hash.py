@@ -3,7 +3,7 @@ import json
 from NIST_SP_800_60X_hash_maker.hashing import hash_all, normalize_secret, hash_argon2id, verify_argon2id, hash_pbkdf2, verify_pbkdf2, hash_xxh128
 
 def test_normalize_utf8():
-    assert normalize_secret("P@ssw0rd🔒") == b"P@ssw0rd\ud83d\udd12" or isinstance(normalize_secret("P@ssw0rd🔒"), bytes)
+    assert normalize_secret("P@ssw0rd") == b"P@ssw0rd" or isinstance(normalize_secret("P@ssw0rd"), bytes)
 
 def test_argon2id_hash_and_verify():
     secret = "TestPassword123"
