@@ -17,7 +17,7 @@ It provides:
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/NIST_SP_800_60X_hash_maker.git
+git clone https://github.com/dmcgoldrick/NIST_SP_800_60X_hash_maker.git
 cd NIST_SP_800_60X_hash_maker
 pip install .
 
@@ -26,5 +26,5 @@ pip install .
 This project is released under the **BSD 0-Clause License** (Zero-Clause BSD).  
 No attribution is required. Use, copy, modify, and distribute freely.
 
-See [LICENSE](LICENSE) for full text.
+[LICENSE] for full text.
 
