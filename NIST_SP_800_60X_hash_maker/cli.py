@@ -4,7 +4,7 @@
 
 import json
 import argparse
-from sbc_hash_tool.hashing import normalize_secret, hash_all, benchmark_argon2id, verify_argon2id, verify_pbkdf2, hash_xxh128
+from NIST_SP_800_60X_hash_maker.hashing import normalize_secret, hash_all, benchmark_argon2id, verify_argon2id, verify_pbkdf2, hash_xxh128
 
 def main():
     parser = argparse.ArgumentParser(description="SBC Argon2id/PBKDF2/xxh128 CLI Tool")
