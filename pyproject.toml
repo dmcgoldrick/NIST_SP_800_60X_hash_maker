@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NIST_SP_800_60X_hash_maker"
+version = "0.1.0"
+description = "SBC-friendly Argon2id/PBKDF2/xxh128 hash benchmarking and CLI tool compliant with NIST SP 800-63x"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Daniel McGoldrick", email = "mcgoldphd@gmail.com"}
+]
+license = {text = "BSD-0-Clause"}
+dependencies = [
+  "argon2-cffi>=21.3.0",
+  "xxhash>=3.2.0"
+]
+
+[project.scripts]
+nist_hash_maker = "NIST_SP_800_60X_hash_maker.cli:main"
+
