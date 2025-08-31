@@ -1,4 +1,4 @@
-# NIST_SP_800_60X_hash_maker
+# NIST_SP_800_63X_hash_maker
 
 **SBC-friendly Argon2id/PBKDF2/xxh128 hash benchmarking and CLI tool**  
 Compliant with **NIST SP 800-63 recommendations**.
@@ -18,8 +18,8 @@ It provides:
 ## Installation
 
 ```bash
-git clone https://github.com/dmcgoldrick/NIST_SP_800_60X_hash_maker.git
-cd NIST_SP_800_60X_hash_maker
+git clone https://github.com/dmcgoldrick/NIST_SP_800_63X_hash_maker.git
+cd NIST_SP_800_63X_hash_maker
 pip install .
 
 ## License
