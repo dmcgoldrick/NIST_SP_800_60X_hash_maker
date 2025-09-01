@@ -7,17 +7,17 @@ reliably while preserving privacy and protecting resources.
 
 ## Key Features
 
-# Secure Identity Management
+### Secure Identity Management
 
 - Strong authentication for machines, users, and reward participants.
 
-# Transport & Key Management
+### Transport & Key Management
 
 - Encrypted communication channels.
 
 - Robust key distribution and lifecycle handling.
 
-# Brokering of Secure Computational Units
+### Brokering of Secure Computational Units
 
 - Encapsulation of in-network computation.
 
@@ -25,7 +25,7 @@ reliably while preserving privacy and protecting resources.
 
 - P2P Anonymity
 
-# Privacy-preserving peer-to-peer interactions (traversal).
+### Privacy-preserving peer-to-peer interactions (traversal).
 
 - Machine Metadata & Normalized Encodings
 
@@ -33,7 +33,7 @@ reliably while preserving privacy and protecting resources.
 
 - Consistent representation across heterogeneous systems.
 
-# "Entailtrons" as Carriers
+### "Entailtrons" as Carriers
 
 Like electrons in a circuit, Entailtrons traverse the network.
 Earn rewards for contributions. Protect access, distributed resources, 
