@@ -6,12 +6,16 @@ import json
 import argparse
 from NIST_SP_800_63X_hash_maker.hashing import (
     normalize_secret,
+    ARGON2_PARAMS,
+    PBKDF2_TIERS,
     hash_all,
     benchmark_argon2id,
     verify_argon2id,
     verify_pbkdf2,
     hash_xxh128,
 )
+from NIST_SP_800_63X_hash_maker.cli_helpers import verify_secret_record
+
 
 def main():
     parser = argparse.ArgumentParser(description="NIST SP 800 Hash Maker CLI Tool")
@@ -32,7 +36,7 @@ def main():
             print("New Argon2id hash recommended due to updated parameters:")
             print(json.dumps(new_record, indent=2))
     else:
-        print("Benchmarking Argon2id...")
+        #print("Benchmarking Argon2id...")
         params, t = benchmark_argon2id(secret=args.secret.encode(), max_time=args.max_time,
                                        ram_mb=args.ram, threads=args.threads)
         print(f"Recommended parameters: {params}")

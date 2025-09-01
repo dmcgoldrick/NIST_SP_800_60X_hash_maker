@@ -2,12 +2,28 @@
 # SPDX-License-Identifier: BSD-0-Clause
 # Author: Anonymous
 
-import os, base64, unicodedata, time
-from hashlib import pbkdf2_hmac
+# hashing.py
+# SPDX-License-Identifier: BSD-0-Clause
+# Author: Anonymous
+
+import os, base64,unicodedata, time
 import xxhash
+from hashlib import pbkdf2_hmac
 from argon2.low_level import hash_secret, verify_secret, Type
 
+# -----------------------------
+# Global defaults (exported)
+# -----------------------------
 SALT_LEN = 16
+
+# Default Argon2id params (safely overridden by benchmarking)
+ARGON2_PARAMS = {
+    "time_cost": 2,
+    "memory_cost": 32768,  # 32 MB default
+    "parallelism": 1,
+    "hash_len": 32,
+}
+
 DEFAULT_HASH_LEN = 32
 PBKDF2_ITERS = 310_000
 
