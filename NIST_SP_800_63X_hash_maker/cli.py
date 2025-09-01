@@ -30,7 +30,8 @@ def main():
     if args.verify:
         with open(args.verify, "r") as f:
             record = json.load(f)
-        valid, new_record = verify_secret_record(args.secret, record, rehash=args.rehash)
+#        valid, new_record = verify_secret_record(args.secret, record, rehash=args.rehash)
+        valid, new_record = verify_secret_record(args.secret, record)
         print(f"Verification result: {valid}")
         if new_record:
             print("New Argon2id hash recommended due to updated parameters:")
